@@ -70,6 +70,8 @@ CREATE TABLE PrescriptionDetails (
     FOREIGN KEY (PrescriptionID) REFERENCES Prescription(PrescriptionID),
     FOREIGN KEY (MedicationID) REFERENCES Medication(MedicationID)
 );
+
+-- drop
 use HealthCareDb;
 DROP TABLE IF EXISTS PrescriptionDetails;
 DROP TABLE IF EXISTS Prescription;

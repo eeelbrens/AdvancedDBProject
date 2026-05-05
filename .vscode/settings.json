@@ -1,0 +1,53 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "ssh": "Disabled",
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MariaDB",
+            "name": "mariadb",
+            "username": "elbrens",
+            "database": "sys",
+            "askForPassword": true
+        },
+        {
+            "connectionTimeout": 15,
+            "mssqlOptions": {
+                "appName": "SQLTools",
+                "useUTC": true,
+                "encrypt": true,
+                "trustServerCertificate": true
+            },
+            "ssh": "Disabled",
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 1433,
+            "driver": "MSSQL",
+            "name": "sqlserver",
+            "username": "sa",
+            "password": "9512357Ee"
+        },
+        {
+            "connectionTimeout": 15,
+            "mssqlOptions": {
+                "appName": "SQLTools",
+                "useUTC": true,
+                "encrypt": true,
+                "trustServerCertificate": true
+            },
+            "ssh": "Disabled",
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 1433,
+            "driver": "MSSQL",
+            "name": "sqlserver2",
+            "username": "sa",
+            "password": "9512357Ee"
+        }
+    ]
+}
