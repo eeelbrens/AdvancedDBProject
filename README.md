@@ -42,7 +42,7 @@ SET STATISTICS IO ON
 SET STATISTICS TIME ON
 
 Execution plans before and after indexing showed a clear improvement, where table scans were replaced with index seeks, resulting in faster query execution and lower resource usage
-- 
+
 
 
 
