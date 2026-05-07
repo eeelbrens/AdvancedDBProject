@@ -2,7 +2,7 @@
 - see eerd.html
 - 
   
-#database Optimization and Stored Procedures (Healthcare System)
+# database Optimization and Stored Procedures (Healthcare System)
 -In this project, several database optimization techniques and stored procedures were implemented to improve system performance and simplify data operations.
 
 1. Stored Procedures
@@ -42,3 +42,25 @@ SET STATISTICS IO ON
 SET STATISTICS TIME ON
 
 Execution plans before and after indexing showed a clear improvement, where table scans were replaced with index seeks, resulting in faster query execution and lower resource usage
+- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
