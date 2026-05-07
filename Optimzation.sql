@@ -21,7 +21,7 @@ END;
 GO
 
 -- Optimized Procedure: CancelAppointment
-CREATE PROCEDURE CancelAppointment
+CREATE PROCEDURE CancelAppointmentoptimzed
     @AppointmentID INT
 AS
 BEGIN
@@ -36,7 +36,7 @@ END;
 GO
 
 -- Optimized Procedure: BookAppointment
-CREATE PROCEDURE BookAppointment
+CREATE PROCEDURE BookAppointmentoptimized
     @PatientID INT,
     @DoctorID INT,
     @AppointmentDate DATETIME
@@ -65,7 +65,7 @@ GO
 
 
 
-
+--non optimized
 CREATE PROCEDURE CancelAppointment
     @AppointmentID INT
 AS
@@ -108,7 +108,7 @@ END;
 
 
 
-
+--windowfunctions
     SELECT
     DoctorID,
     AppointmentID,
@@ -151,7 +151,7 @@ FROM Appointment
 GROUP BY DoctorID;
 
 
-
+--clusterd indexes
 CREATE NONCLUSTERED INDEX IX_Appointment_Doctor_Date
 ON Appointment (DoctorID, AppointmentDate);
 
